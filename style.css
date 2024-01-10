@@ -1,0 +1,95 @@
+* {
+
+    margin: 0;
+ 
+    padding: 0;
+ 
+    box-sizing: border-box;
+ 
+ }
+ 
+  
+ 
+ body {
+ 
+     background-image: url('img/pexels-david-bartus-844928.jpg');
+ 
+     background-size: cover;
+ 
+     width: 100vw;
+ 
+     height: 100vh;
+ 
+     font-family: 'Open Sans', sans-serif;
+ 
+ }
+ 
+  
+ 
+ .tittle {
+ 
+     color: rgb(255, 255, 255);
+ 
+    
+ 
+     justify-content: center;
+ 
+     text-align: center;
+ 
+     font-size: 10vw;
+ 
+     border-radius: 10px;
+ 
+     margin: 10vh auto ;
+ 
+     text-shadow: 0 0 10px black;
+ 
+ }
+ 
+  
+ 
+ main {
+ 
+     display: flex;
+ 
+     flex-direction: column;
+ 
+ }
+ 
+  
+ 
+ .container {
+ 
+     width: 90vw;
+ 
+     height: 100px;
+ 
+     margin: 0 auto;
+ 
+     display: flex;
+ 
+     align-items: center;
+ 
+     justify-content: space-around;
+
+     border-radius: 10px;
+
+     flex-wrap: wrap;
+
+     gap: 5px;
+ 
+ }
+
+ .key {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000AA;
+    border: 2px solid white;
+    color: white;
+    font-size: calc(3 vw + 20 px);
+    text-align: center;
+    cursor: pointer;
+ }
