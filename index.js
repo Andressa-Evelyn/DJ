@@ -1,10 +1,10 @@
 'use strict';
 
 const sons = {
-    'mi' : 'midnight-forest-184304.mp3',
-    'me' : 'mellow-future-bass-bounce-on-it-184234.mp3',
-    'd' : 'drive-breakbeat-173062.mp3',
-    't' : 'titanium-170190.mp3'
+    'Midnight Forest' : 'midnight-forest-184304.mp3',
+    'Mellow Future Bass' : 'mellow-future-bass-bounce-on-it-184234.mp3',
+    'Drive Breakbeat' : 'drive-breakbeat-173062.mp3',
+    'Titanium' : 'titanium-170190.mp3'
 }
 
 
@@ -27,7 +27,11 @@ const tocarSom = (letra) => {
 
 const ativarDiv = (evento) => {
 const letra = evento.target.id;
-tocarSom(letra);
+const letraPermitida = sons.hasOwnProperty(letra);
+if(letraPermitida){
+    tocarSom(letra);
+}
+
 }
 
 exibir(sons);
